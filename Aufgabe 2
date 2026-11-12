@@ -1,0 +1,66 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int matrix[4][4] =
+	{
+		{1,0,0,0},
+		{0,1,0,0},
+		{0,0,1,0},
+		{0,0,0,1},
+	};
+
+	int n;
+	int m;
+	for (n = 0;n < 4;n++)
+	{
+		for (m = 0;m < 4;m++)
+		{
+			matrix[n][m] *= 2.0;
+		}
+	}
+
+	for (n = 0;n < 4;n++)
+	{
+		for (m = 0;m < 4;m++)
+		{
+			cout << matrix[n][m] << " ";
+		}
+		cout << endl;
+	}
+}
+
+#include<iostream>
+using namespace std;
+
+#define DIM 4
+
+void main()
+{
+	double matrix[DIM][DIM] =
+	{
+		{1,0,0,0},
+		{0,1,0,0},
+		{0,0,1,0},
+		{0,0,0,1}
+	};
+
+	for (int x = 0; x < DIM;x++)
+	{
+		for (int y = 0;y < DIM; y++)
+		{
+			matrix[x][y] *= 2.0;
+		}
+	}
+
+	for (int x = 0; x < DIM;x++)
+	{
+		for (int y = 0;y < DIM; y++)
+		{
+			cout << matrix[x][y] << " ";
+		}
+		cout << endl;
+	}
+	
+}
