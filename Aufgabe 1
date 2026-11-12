@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+void main()
+{
+	int zahl[20];
+	for (int i = 0;i < 20;i++)
+	{
+		zahl[i] = i + 1;
+	}
+
+	for (int i = 0;i < 20;i++)
+	{
+		cout << zahl[i]<<" ";
+	}
+	cout << endl;
+
+	for (int i=19; i>=0;i--)
+	{
+		cout << zahl[i] << " ";
+	}
+}
+
+#include<iostream>
+using namespace std;
+
+#define ANZ 5
+
+void main()
+{
+	int zahl[ANZ];
+	for (int i = 0;i < ANZ;i++)
+	{
+		zahl[i] = i + 1;
+	}
+
+	for (int i = 0;i < ANZ;i++)
+	{
+		cout << zahl[i]<<" ";
+	}
+	cout << endl;
+
+	for (int i=ANZ; i>=0;i--)
+	{
+		cout << zahl[i] << " ";
+	}
+}
